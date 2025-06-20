@@ -1,10 +1,11 @@
 {
   "name": "product-service",
-  "module": "index.ts",
+  "module": "src/index.js",
   "type": "module",
   "private": true,
   "devDependencies": {
     "@types/bun": "latest",
+    "eslint": "^9.29.0",
     "tsx": "^4.20.3"
   },
   "peerDependencies": {
@@ -14,5 +15,9 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "mongoose": "^8.16.0"
+  },
+  "scripts": {
+    "start": "bun run src/index.js",
+    "dev": "bun run src/index.js --watch"
   }
 }
